@@ -1,10 +1,16 @@
 #Installation
 
-`git clone repo`
+`git clone https://github.com/pawell67/laravel-sail.git`
 
-`cd repo`
+`cd laravel-sail`
 
-`./vendor/bin/sail up`
+`cp .env.example .env`
+
+`composer install --ignore-platform-reqs`
+
+`./vendor/bin/sail up -d`
+
+`./vendor/bin/sail artisan key:generate`
 
 `./vendor/bin/sail artisan migrate`
 
